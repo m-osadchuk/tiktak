@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TikTak 🌸 — С 8 Марта!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="petals-container" id="petals"></div>
+
+  <!-- ШАПКА -->
+  <header class="header">
+    <div class="logo">TikTak</div>
+    <div class="header-sub">🌸 Поздравления с 8 Марта от каждого из нас 🌸</div>
+  </header>
+
+  <!-- ЛЕНТА -->
+  <main class="feed" id="feed"></main>
+
+  <!-- МОДАЛКА -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-media" id="modalMedia"></div>
+      <div class="modal-body">
+        <div class="modal-author" id="modalAuthor"></div>
+        <div class="modal-message" id="modalMessage"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
